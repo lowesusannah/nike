@@ -15,3 +15,22 @@ $border: .5px solid lightgrey;
 button {
   background-color: white;
 }
+
+
+
+//typography
+@font-face {
+  font-family: 'Nike';
+  src: url('https://www.nike.com/styleguide/assets/fonts/nike/5fdc935e-9e30-442a-bbe9-8d887b858471.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'OneNikeGlyphs';
+  src: url('https://www.nike.com/styleguide/assets/fonts/onenike-glyph/desktop/OneNikeGlyphs-52f63fe773749550a8b6ecbacdbced22.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'OneNikeCurrency';
+  src: url('https://www.nike.com/styleguide/assets/fonts/onenike-currency/OneNikeCurrency-8aaff7decca3face1566b24221b5eb2b.woff') format('woff');
+}

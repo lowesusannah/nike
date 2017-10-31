@@ -2,6 +2,17 @@
 //   display: flex;
 // }
 //
+
+// @import url ('https://www.nike.com/styleguide/assets/fonts/onenike-currency/OneNikeCurrency-8aaff7decca3face1566b24221b5eb2b.woff');
+
+// * {
+//   font-family: sans-serif;
+// }
+
+
+body {
+  font-family: 'Nike';
+}
 nav {
   margin: 0;
   border: 0;
@@ -15,6 +26,8 @@ nav {
   display: flex;
   width: 100%;
   margin: 0px;
+  z-index: 1000;
+  justify-content: flex-end;
 }
 
 .nav-box {
@@ -22,6 +35,7 @@ nav {
   border-left: $border;
   border-bottom: $border;
   flex-grow: 1;
+  z-index: 1000;
 }
 
 .nav-box:nth-child(6) {
@@ -41,7 +55,7 @@ nav {
 span, ul, form {
   width: 30%;
   align-self: baseline;
-  margin: 20px;
+  margin: 20px 30px;
 }
 
 span, form {
@@ -53,38 +67,72 @@ form {
   display: flex;
   justify-content: flex-end;
 }
+
 ul {
   flex-grow: 2;
+  flex-wrap: nowrap;
+  min-width: 500px;
+  font-size: 16px;
 }
 
 li {
   display: inline;
+  font-family: 'Nike';
+  margin: 0px 20px;
 }
 
 input {
   display: block;
   border: $border;
+  border-radius: 1px;
+  padding: 10px 15px;
+  color: grey;
+  font-weight: lighter;
 }
+
+input[value="Search"]{
+  font-size: 14px;
+}
+
+// [class*=g72] {
+//     font-family: 'OneNikeGlyphs';
+//     display: inline-block;
+//     font-size: inherit;
+//     line-height: inherit;
+//     vertical-align: top;
+//     font-style: normal;
+//     font-variant: normal;
+//     font-weight: 400;
+//     text-decoration: none;
+//     text-transform: none;
+//     -webkit-font-smoothing: antialiased;
+//   }
+//
+// .g72-search:before {
+//     content: "\E03E";
+// }
+
 
 span img {
   width: 75px;
 }
 
 .hero img {
-  // width: 100%;
+  width: 100%;
   margin-top: 100px;
 }
 
 .hero {
   width: 100%;
-  position: relative;
 }
 
 .hero-content {
+  min-width: 200px;
+  font-size: 1em;
   position: absolute;
-  margin-top: -400px;
+  margin-top: 30vh;
   color: white;
-  margin-left: 60px;
+  margin-left: 5vw;
 }
 
 .shoes {
@@ -93,11 +141,94 @@ span img {
 
 .media {
   display: flex;
-  width: 15%;
+  flex-flow: column;
   margin: 10px;
+  width: 30vw;
 }
 
 .media-figure {
   width: 100%;
   height: 100%;
 }
+
+.media-body {
+  width: 100%;
+  align-self: flex-end;
+  margin: 0;
+}
+
+.container {
+  margin: 20px 30px;
+}
+
+
+.nsg-glyph--jumpman:before {
+    content: "\f11e";
+}
+
+[class*=nsg-glyph--]:before {
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-family: 'OneNikeGlyphs';
+    // position: absolute;
+    // top: 50%;
+    // left: 0;
+    // width: 100%;
+    // text-align: center;
+    // text-indent: 0;
+    // line-height: 1;
+    // margin-top: -.5em;
+  }
+
+.nsg-glyph--logo-hurley:before {
+  content: "\f14e";
+}
+
+.nsg-glyph--logo-converse:before {
+  content: "\f15b";
+}
+
+.nsg-glyph--cart:before {
+    content: "\f108";
+    font-size: 20px;
+}
+
+#box-content {
+  font-family: 'Nike';
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+.nav-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: grey;
+  font-size: 25px;
+}
+
+.nav-box ul {
+  display: flex;
+  align-self: center;
+  justify-content: flex-end;
+  padding-top: 10px;
+  line-height: normal;
+}
+
+.nav-box li {
+  font-family: sans-serif;
+  font-size: 12px;
+}
+
+.nav-box:nth-child(3) {
+  font-size: 50px;
+}
+
+.nav-box:nth-child(4) {
+  font-size: 70px;
+}
+
+//
+// .nav-box ul li {
+//   align-self: flex-end;
+// }
