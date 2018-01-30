@@ -6,8 +6,8 @@
 #### By _**Susannah Lowe and Jessie **_
 
 ## Setup/Installation Requirements
-   * Node and Bower are installed on your machine globally
-   * Knowledge of ES6 vocabulary and syntax
+   * Knowledge of CSS and Sass syntax/organization
+   * TextEditor such as Atom
 
   ### Installation Instructions:
     1. Clone project from GitHub repository, by copying and pasting the url of this GitHub repository following the $git clone command into your favorite command line program, such as Terminal on Mac.  
